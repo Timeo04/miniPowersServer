@@ -1,0 +1,13 @@
+<Files add.php>
+AuthName "Bitte anmelden!"
+AuthType Basic
+AuthUserFile /app/.htpasswd
+Require valid-user
+</Files>
+
+<Files reset.php>
+AuthName "Bitte anmelden!"
+AuthType Basic
+AuthUserFile /app/.htpasswd
+Require valid-user
+</Files>
