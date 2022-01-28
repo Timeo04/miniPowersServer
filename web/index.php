@@ -20,7 +20,7 @@
       ltrim($db["path"], "/")
   ));
   
-  
+  /*
   echo '<table border="1" width="500" style="margin-left:auto;margin-right:auto">';
   echo '<tr><th>Score:</th><th>Name:</th><th>Datum:</th></tr>';
   $sql = "SELECT score, name, date FROM scoreboard ORDER BY score DESC";
@@ -33,7 +33,7 @@
   }
   echo "</table>";
   
-  echo "<br>";
+  echo "<br>";*/
   echo '<table border="1" width="500" style="margin-left:auto;margin-right:auto">';
   echo '<tr><th>Score:</th><th>Name:</th><th>Datum:</th></tr>';
   $sql = "SELECT MAX(score), name FROM scoreboard GROUP BY userid, name ORDER BY score DESC";
